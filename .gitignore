@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backend
+backend/venv
+__pycache__/
+*.pyc
+*.pyo
+backend/.pytest_cache
+prepai_trained_models/
+.env
+
+# ML Training
+prepai_model_training/datasets/
+
+# Playwright
+playwright-report/
+test-results/
+test-failure.html
+test-failure.png
+.playwright-mcp/
+*.ps1
+*.png
+
+# Agent customizations
+.agents/
+skills-lock.json
+
+# User Uploads
+server/uploads/*
+!server/uploads/.gitkeep
+
+

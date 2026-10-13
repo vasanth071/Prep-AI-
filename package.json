@@ -1,0 +1,30 @@
+{
+  "name": "prepai-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PrepAI Placement Preparation Platform (MERN)",
+  "scripts": {
+    "dev": "node scripts/start-all.js",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "lint:frontend": "npm --prefix frontend run lint",
+    "test:frontend": "npm --prefix frontend run test",
+    "test:server": "npm --prefix server run test",
+    "test:laya": "pytest services/laya-engine/tests -q",
+    "lint:laya": "flake8 services/laya-engine",
+    "audit:laya": "pip-audit -r services/laya-engine/requirements.txt",
+    "test": "npm --prefix server run test",
+    "laya:start": "python services/laya-engine/app.py",
+    "benchmark": "npm --prefix server run benchmark",
+    "benchmark:compare": "npm --prefix server run benchmark:compare",
+    "test:e2e": "npm --prefix frontend run test:e2e",
+    "server": "npm --prefix server run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "test:integration": "npm --prefix server run test:integration",
+    "migrate": "npm --prefix server run migrate",
+    "start:all": "node scripts/start-all.js",
+    "start": "node scripts/start-all.js",
+    "dev:web": "npm --prefix frontend run dev"
+  }
+}
